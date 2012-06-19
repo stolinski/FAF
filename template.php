@@ -132,7 +132,7 @@ function faf_button($variables) {
   $element['#attributes']['type'] = 'submit';
   element_set_attributes($element, array('id', 'name', 'value'));
 
-  $element['#attributes']['class'][] = 'btn form-' . $element['#button_type'];
+  $element['#attributes']['class'][] = 'btn btn-primary form-' . $element['#button_type'];
   if (!empty($element['#attributes']['disabled'])) {
     $element['#attributes']['class'][] = 'form-button-disabled';
   }
